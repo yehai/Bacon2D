@@ -65,7 +65,9 @@ SOURCES += entity.cpp \
 else: target.path = $$[QT_INSTALL_QML]/$$replace(TARGETPATH, \\., /).$$API_VER
 ;
 
-QMLFILES += $$PWD/PhysicsEntity.qml \
+QMLFILES += \
+            $$PWD/InfiniteScrollEntity.qml \
+            $$PWD/PhysicsEntity.qml \
             $$PWD/BoxBody.qml \
             $$PWD/ChainBody.qml \
             $$PWD/CircleBody.qml \
